@@ -1,0 +1,44 @@
+{
+  "name": "forced_and_zero",
+  "metadata": {
+    "source": "Synthetic edge case.",
+    "known_optimum_cents": 1500
+  },
+  "stores": [
+    {
+      "name": "Veikals A",
+      "delivery_cents": 500,
+      "free_delivery_threshold_cents": null
+    },
+    {
+      "name": "Veikals B",
+      "delivery_cents": 400,
+      "free_delivery_threshold_cents": 1000
+    },
+    {
+      "name": "Unused",
+      "delivery_cents": 999,
+      "free_delivery_threshold_cents": null
+    }
+  ],
+  "items": [
+    {
+      "name": "Free item",
+      "quantity": 2,
+      "prices_cents": [
+        0,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "Threshold item",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        500,
+        null
+      ]
+    }
+  ]
+}

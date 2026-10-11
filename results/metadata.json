@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-11T13:59:02+00:00",
+  "completed_at_utc": "2026-10-11T14:00:04+00:00",
+  "timestamp_source": "Host system clock, UTC; wall timestamps are not runtime measurements.",
+  "total_wall_seconds": 61.36738509999998,
+  "environment": {
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "python_implementation": "CPython",
+    "python_executable": "python.exe",
+    "os": "Windows-11-10.0.22631-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+    "logical_cpu_count": 14
+  },
+  "parameters": {
+    "ordinary_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "ordinary_iterations": 20000,
+    "ordinary_initialization": "Cheapest available unit price for each item; deterministic ties.",
+    "reference_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009
+    ],
+    "reference_iterations": 100000,
+    "reference_initialization": "Alternating cheapest (even run index) and random feasible (odd run index).",
+    "reference_initial_rng": "Separate random.Random(seed), independent of the SA RNG object.",
+    "reference_scope": "Instances whose feasible state count exceeds max_exact_states only.",
+    "max_exact_states": 2000000,
+    "start_temp_cents": 2000.0,
+    "end_temp_cents": 1.0
+  },
+  "definitions": {
+    "objective": "Integer euro cents: sum(quantity * chosen store unit price) + delivery for each used store whose subtotal is below its free delivery threshold, or which has no free delivery threshold.",
+    "used_store": "At least one item assigned, including a zero-priced item; empty stores pay no delivery.",
+    "reference": "Exact exhaustive optimum for small instances. Otherwise minimum across cheapest baseline, ordinary SA and separate higher-budget SA; not a proven optimum unless equal to the elementary lower bound.",
+    "lower_bound": "Sum over items of quantity times cheapest available unit price; excludes all nonnegative delivery costs.",
+    "gap_percent": "100 * (cost - reference) / reference. Zero against zero is 0; positive against zero is infinity.",
+    "stdev": "Sample standard deviation (n-1 denominator); 0 when only one sample.",
+    "runtime": "Elapsed seconds measured by solver-internal time.perf_counter; excludes file I/O, reference/exact computations from SA times, and aggregation.",
+    "runtime_limitations": "Sequential single-process runs, without CPU affinity or control over operating-system background activity. Timings describe this machine and run only.",
+    "units": "Integer EUR cents for individual objectives; sample means and standard deviations may have fractional cents."
+  },
+  "inputs": [
+    {
+      "instance": "small_06x03",
+      "file": "small_06x03.json",
+      "sha256": "561cd32d8cc0636531ac44b44a02fbd5f854e94fefa3bfa2c1f08e8db3893b48",
+      "items": 6,
+      "stores": 3,
+      "feasible_assignments": 486
+    },
+    {
+      "instance": "small_08x04",
+      "file": "small_08x04.json",
+      "sha256": "4b15fc974b8960ebea99cfdea404c35f990d785e9bc585603fd13524fe66400c",
+      "items": 8,
+      "stores": 4,
+      "feasible_assignments": 2592
+    },
+    {
+      "instance": "small_10x04",
+      "file": "small_10x04.json",
+      "sha256": "1c4d5bd83054671e168e2dc940fa0f5e5a72f28389d0dbdfe938171394f04759",
+      "items": 10,
+      "stores": 4,
+      "feasible_assignments": 69984
+    },
+    {
+      "instance": "small_12x03",
+      "file": "small_12x03.json",
+      "sha256": "c44e7e16145d1a9bf281a95dd1e0436a0693fa6324e3de0eecc1286a9b023fd4",
+      "items": 12,
+      "stores": 3,
+      "feasible_assignments": 15552
+    },
+    {
+      "instance": "medium_20x05",
+      "file": "medium_20x05.json",
+      "sha256": "dcc2aec1f08bf6016069d51fa7417933615d9dd97535d6830185963a8038b18d",
+      "items": 20,
+      "stores": 5,
+      "feasible_assignments": 29859840000
+    },
+    {
+      "instance": "medium_40x06",
+      "file": "medium_40x06.json",
+      "sha256": "12fe18d71ae6c313d9a709a45d409e7ad63e91ae12f10488fe95c20022791f10",
+      "items": 40,
+      "stores": 6,
+      "feasible_assignments": 1056723016089600000000000
+    },
+    {
+      "instance": "large_80x08",
+      "file": "large_80x08.json",
+      "sha256": "ec38bff0a1538a5291fe5692861887da79664dff8e6a9e0a80733e5225b5595f",
+      "items": 80,
+      "stores": 8,
+      "feasible_assignments": 6067408815588065082357918172446720000000000000000000
+    },
+    {
+      "instance": "large_120x10",
+      "file": "large_120x10.json",
+      "sha256": "7467832dd2c671947cb2fdc4308bfe4ba5d1549c6a44f5788ab81027f591f671",
+      "items": 120,
+      "stores": 10,
+      "feasible_assignments": 4765323834402593720239224716612582464967314133483434150322813541757747200000000000000000
+    }
+  ],
+  "source_sha256": {
+    "scripts/benchmark.py": "f9516bbfbe6affed78ffd258b7b320c37941feb090c5aa1d205d381f77d3d5c8",
+    "scripts/generate_instances.py": "d1371e71d7920375f26c73c5520f0d0d62bd29c08cc4498d956dd0bdef51a18e",
+    "shopping_sa/__init__.py": "0b13fc344bff26625308a2e7d110f06b7bd11a88894441fe781dfd6386e9f077",
+    "shopping_sa/__main__.py": "2190ce143b640bc86a26683f2dc28582acd13ec6a09d27984e9804a396487f36",
+    "shopping_sa/exact.py": "54a9089d82046d9eaf07ce3d5566322da25b8b430dc82e681efdfbe3ad467093",
+    "shopping_sa/model.py": "a35b3739d529e3d5c97590ea0554788f7a49ef72def0197d14c17a6d983c23be",
+    "shopping_sa/solver.py": "1eae195776a707a660a2a877482476a8244b3ac81b8f03d9f8f706d2a8866ea0",
+    "tests/__init__.py": "beaffa74c02d4f778fe3cf604c26d224926cf83fe1074cf6022200953636ef9f",
+    "tests/test_annealing.py": "6052b666d96bb2b47173b2c6167927598fa3a8267dc92895bf24fe11fe083a8c",
+    "tests/test_instances.py": "0b12ee4e6e914a3e78906276a8f8b4d0741a832728b1756dbbe9cada7b74d645",
+    "tests/test_model_and_exact.py": "58e4e6894b9347e04e025f4f27eaa7d33cb3180da962a257d72ad5c95c5aa5ee"
+  },
+  "output_files": [
+    "runs.csv",
+    "reference_runs.csv",
+    "summary.csv",
+    "solutions.json",
+    "metadata.json"
+  ],
+  "metadata_sanitation_note": "After measurement, the Python executable path was reduced to its filename for privacy, and source hashes were limited to numerical experiment code and tests. The benchmark.py hash reflects only these metadata-writing changes. All measured objectives, assignments and timing values remain unchanged; measurements were not rerun."
+}

@@ -1,0 +1,1178 @@
+{
+  "name": "large_80x08",
+  "metadata": {
+    "source": "Synthetic teaching data; no real store prices or scraping.",
+    "currency": "EUR",
+    "price_unit": "integer cents per unit",
+    "seed": 80108,
+    "scenario": "high_thresholds",
+    "availability_probability": 0.6,
+    "feasible_assignments": 6067408815588065082357918172446720000000000000000000,
+    "identity_rule": "Each P-code is one identical product across all stores.",
+    "quantity_rule": "All units of an item are assigned to the same store."
+  },
+  "stores": [
+    {
+      "name": "Veikals A",
+      "delivery_cents": 1199,
+      "free_delivery_threshold_cents": 21000
+    },
+    {
+      "name": "Veikals B",
+      "delivery_cents": 599,
+      "free_delivery_threshold_cents": 28000
+    },
+    {
+      "name": "Veikals C",
+      "delivery_cents": 1199,
+      "free_delivery_threshold_cents": 21000
+    },
+    {
+      "name": "Veikals D",
+      "delivery_cents": 1199,
+      "free_delivery_threshold_cents": 28000
+    },
+    {
+      "name": "Veikals E",
+      "delivery_cents": 299,
+      "free_delivery_threshold_cents": 21000
+    },
+    {
+      "name": "Veikals F",
+      "delivery_cents": 399,
+      "free_delivery_threshold_cents": 28000
+    },
+    {
+      "name": "Veikals G",
+      "delivery_cents": 299,
+      "free_delivery_threshold_cents": 21000
+    },
+    {
+      "name": "Veikals H",
+      "delivery_cents": 299,
+      "free_delivery_threshold_cents": 28000
+    }
+  ],
+  "items": [
+    {
+      "name": "P001: Kafija 500 g",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        null,
+        690,
+        null,
+        684,
+        709,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P002: Tēja 40 maisiņi",
+      "quantity": 3,
+      "prices_cents": [
+        728,
+        null,
+        856,
+        896,
+        952,
+        896,
+        904,
+        848
+      ]
+    },
+    {
+      "name": "P003: Rīsi 1 kg",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        null,
+        null,
+        703,
+        635,
+        737,
+        690,
+        771
+      ]
+    },
+    {
+      "name": "P004: Makaroni 500 g",
+      "quantity": 2,
+      "prices_cents": [
+        534,
+        558,
+        461,
+        null,
+        466,
+        null,
+        null,
+        446
+      ]
+    },
+    {
+      "name": "P005: Auzu pārslas 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        305,
+        296,
+        296,
+        286,
+        323,
+        290,
+        314,
+        296
+      ]
+    },
+    {
+      "name": "P006: Olīveļļa 500 ml",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        null,
+        277,
+        298,
+        null,
+        283,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P007: Konservēti tomāti 400 g",
+      "quantity": 2,
+      "prices_cents": [
+        133,
+        null,
+        null,
+        160,
+        123,
+        null,
+        109,
+        157
+      ]
+    },
+    {
+      "name": "P008: Pupiņas 400 g",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        435,
+        null,
+        435,
+        387,
+        354,
+        373,
+        277
+      ]
+    },
+    {
+      "name": "P009: Milti 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        503,
+        719,
+        null,
+        617,
+        587,
+        null,
+        599,
+        683
+      ]
+    },
+    {
+      "name": "P010: Cukurs 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        null,
+        260,
+        301,
+        null,
+        260,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P011: Šokolāde 100 g",
+      "quantity": 2,
+      "prices_cents": [
+        1080,
+        null,
+        983,
+        null,
+        1168,
+        924,
+        934,
+        null
+      ]
+    },
+    {
+      "name": "P012: Rieksti 200 g",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        null,
+        null,
+        null,
+        723,
+        723,
+        609,
+        761
+      ]
+    },
+    {
+      "name": "P013: Sula 1 l",
+      "quantity": 1,
+      "prices_cents": [
+        354,
+        315,
+        279,
+        267,
+        null,
+        null,
+        336,
+        null
+      ]
+    },
+    {
+      "name": "P014: Cepumi 250 g",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        690,
+        null,
+        626,
+        null,
+        515,
+        null,
+        509
+      ]
+    },
+    {
+      "name": "P015: Medus 500 g",
+      "quantity": 1,
+      "prices_cents": [
+        881,
+        null,
+        null,
+        921,
+        null,
+        874,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P016: Zobu pasta 75 ml",
+      "quantity": 3,
+      "prices_cents": [
+        null,
+        null,
+        703,
+        null,
+        735,
+        647,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P017: Ziepes 100 g",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        872,
+        null,
+        1029,
+        828,
+        994,
+        889,
+        924
+      ]
+    },
+    {
+      "name": "P018: Šampūns 250 ml",
+      "quantity": 1,
+      "prices_cents": [
+        1057,
+        null,
+        1414,
+        1271,
+        1034,
+        1105,
+        null,
+        1200
+      ]
+    },
+    {
+      "name": "P019: Trauku mazgāšanas līdzeklis 500 ml",
+      "quantity": 1,
+      "prices_cents": [
+        652,
+        605,
+        null,
+        null,
+        638,
+        null,
+        null,
+        672
+      ]
+    },
+    {
+      "name": "P020: Papīra dvieļi 2 ruļļi",
+      "quantity": 1,
+      "prices_cents": [
+        286,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P021: Kafija 500 g",
+      "quantity": 1,
+      "prices_cents": [
+        1012,
+        921,
+        null,
+        null,
+        812,
+        894,
+        876,
+        null
+      ]
+    },
+    {
+      "name": "P022: Tēja 40 maisiņi",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        1090,
+        1049,
+        1130,
+        1009,
+        null,
+        null,
+        979
+      ]
+    },
+    {
+      "name": "P023: Rīsi 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        391,
+        415,
+        null,
+        431,
+        442,
+        470,
+        null,
+        427
+      ]
+    },
+    {
+      "name": "P024: Makaroni 500 g",
+      "quantity": 1,
+      "prices_cents": [
+        382,
+        355,
+        406,
+        355,
+        366,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P025: Auzu pārslas 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        177,
+        236,
+        205,
+        null,
+        null,
+        229,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P026: Olīveļļa 500 ml",
+      "quantity": 1,
+      "prices_cents": [
+        557,
+        null,
+        710,
+        null,
+        723,
+        646,
+        589,
+        749
+      ]
+    },
+    {
+      "name": "P027: Konservēti tomāti 400 g",
+      "quantity": 1,
+      "prices_cents": [
+        729,
+        822,
+        536,
+        null,
+        815,
+        794,
+        null,
+        837
+      ]
+    },
+    {
+      "name": "P028: Pupiņas 400 g",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        1226,
+        950,
+        1063,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P029: Milti 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        132,
+        155,
+        170,
+        173,
+        null,
+        176,
+        170,
+        null
+      ]
+    },
+    {
+      "name": "P030: Cukurs 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        1265,
+        1075,
+        970,
+        1138,
+        1075,
+        991,
+        null,
+        991
+      ]
+    },
+    {
+      "name": "P031: Šokolāde 100 g",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        549,
+        null,
+        469,
+        517,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P032: Rieksti 200 g",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        204,
+        270,
+        null,
+        245,
+        247,
+        218,
+        null
+      ]
+    },
+    {
+      "name": "P033: Sula 1 l",
+      "quantity": 1,
+      "prices_cents": [
+        986,
+        1307,
+        1057,
+        1283,
+        null,
+        1200,
+        1414,
+        null
+      ]
+    },
+    {
+      "name": "P034: Cepumi 250 g",
+      "quantity": 1,
+      "prices_cents": [
+        171,
+        168,
+        153,
+        151,
+        null,
+        null,
+        null,
+        174
+      ]
+    },
+    {
+      "name": "P035: Medus 500 g",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        847,
+        719,
+        null,
+        712,
+        662,
+        797,
+        null
+      ]
+    },
+    {
+      "name": "P036: Zobu pasta 75 ml",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        1260,
+        null,
+        908,
+        null,
+        null,
+        null,
+        1185
+      ]
+    },
+    {
+      "name": "P037: Ziepes 100 g",
+      "quantity": 1,
+      "prices_cents": [
+        691,
+        null,
+        null,
+        776,
+        null,
+        null,
+        652,
+        711
+      ]
+    },
+    {
+      "name": "P038: Šampūns 250 ml",
+      "quantity": 1,
+      "prices_cents": [
+        588,
+        575,
+        744,
+        656,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P039: Trauku mazgāšanas līdzeklis 500 ml",
+      "quantity": 1,
+      "prices_cents": [
+        479,
+        515,
+        null,
+        null,
+        534,
+        397,
+        369,
+        447
+      ]
+    },
+    {
+      "name": "P040: Papīra dvieļi 2 ruļļi",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        null,
+        null,
+        419,
+        null,
+        398,
+        null,
+        436
+      ]
+    },
+    {
+      "name": "P041: Kafija 500 g",
+      "quantity": 3,
+      "prices_cents": [
+        null,
+        538,
+        598,
+        null,
+        498,
+        533,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P042: Tēja 40 maisiņi",
+      "quantity": 1,
+      "prices_cents": [
+        760,
+        768,
+        823,
+        null,
+        null,
+        null,
+        null,
+        862
+      ]
+    },
+    {
+      "name": "P043: Rīsi 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        770,
+        725,
+        644,
+        null,
+        777,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P044: Makaroni 500 g",
+      "quantity": 1,
+      "prices_cents": [
+        1054,
+        null,
+        1173,
+        944,
+        1163,
+        null,
+        1183,
+        1054
+      ]
+    },
+    {
+      "name": "P045: Auzu pārslas 1 kg",
+      "quantity": 3,
+      "prices_cents": [
+        1001,
+        1148,
+        1194,
+        989,
+        978,
+        1057,
+        null,
+        1035
+      ]
+    },
+    {
+      "name": "P046: Olīveļļa 500 ml",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        262,
+        null
+      ]
+    },
+    {
+      "name": "P047: Konservēti tomāti 400 g",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        null,
+        null,
+        null,
+        992,
+        923,
+        null,
+        804
+      ]
+    },
+    {
+      "name": "P048: Pupiņas 400 g",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        398,
+        423,
+        393,
+        null,
+        461,
+        482,
+        null
+      ]
+    },
+    {
+      "name": "P049: Milti 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        470,
+        null,
+        497,
+        null,
+        399,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P050: Cukurs 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        1012,
+        1248,
+        1090,
+        1090,
+        989,
+        1034,
+        null
+      ]
+    },
+    {
+      "name": "P051: Šokolāde 100 g",
+      "quantity": 1,
+      "prices_cents": [
+        1039,
+        1246,
+        null,
+        null,
+        1385,
+        1027,
+        1062,
+        1096
+      ]
+    },
+    {
+      "name": "P052: Rieksti 200 g",
+      "quantity": 1,
+      "prices_cents": [
+        817,
+        null,
+        924,
+        861,
+        null,
+        null,
+        906,
+        773
+      ]
+    },
+    {
+      "name": "P053: Sula 1 l",
+      "quantity": 1,
+      "prices_cents": [
+        120,
+        120,
+        112,
+        null,
+        null,
+        142,
+        131,
+        null
+      ]
+    },
+    {
+      "name": "P054: Cepumi 250 g",
+      "quantity": 2,
+      "prices_cents": [
+        525,
+        479,
+        451,
+        null,
+        516,
+        484,
+        428,
+        null
+      ]
+    },
+    {
+      "name": "P055: Medus 500 g",
+      "quantity": 1,
+      "prices_cents": [
+        866,
+        904,
+        758,
+        null,
+        null,
+        null,
+        628,
+        null
+      ]
+    },
+    {
+      "name": "P056: Zobu pasta 75 ml",
+      "quantity": 1,
+      "prices_cents": [
+        676,
+        576,
+        null,
+        529,
+        null,
+        535,
+        676,
+        541
+      ]
+    },
+    {
+      "name": "P057: Ziepes 100 g",
+      "quantity": 1,
+      "prices_cents": [
+        714,
+        914,
+        null,
+        753,
+        null,
+        722,
+        860,
+        837
+      ]
+    },
+    {
+      "name": "P058: Šampūns 250 ml",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        null,
+        null,
+        706,
+        null,
+        680,
+        661,
+        null
+      ]
+    },
+    {
+      "name": "P059: Trauku mazgāšanas līdzeklis 500 ml",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        970,
+        null,
+        null,
+        987,
+        null,
+        null,
+        771
+      ]
+    },
+    {
+      "name": "P060: Papīra dvieļi 2 ruļļi",
+      "quantity": 1,
+      "prices_cents": [
+        936,
+        1014,
+        936,
+        807,
+        996,
+        996,
+        893,
+        953
+      ]
+    },
+    {
+      "name": "P061: Kafija 500 g",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        596,
+        590,
+        616,
+        637,
+        757,
+        null,
+        583
+      ]
+    },
+    {
+      "name": "P062: Tēja 40 maisiņi",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        1124,
+        null,
+        1133,
+        899,
+        811,
+        1055,
+        null
+      ]
+    },
+    {
+      "name": "P063: Rīsi 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        894,
+        808,
+        834,
+        929,
+        null,
+        860,
+        808,
+        998
+      ]
+    },
+    {
+      "name": "P064: Makaroni 500 g",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        212,
+        230,
+        217,
+        null,
+        253,
+        260,
+        176
+      ]
+    },
+    {
+      "name": "P065: Auzu pārslas 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        296,
+        312,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P066: Olīveļļa 500 ml",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        null,
+        176,
+        180,
+        null,
+        null,
+        140,
+        143
+      ]
+    },
+    {
+      "name": "P067: Konservēti tomāti 400 g",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        null,
+        null,
+        null,
+        626,
+        739,
+        746,
+        619
+      ]
+    },
+    {
+      "name": "P068: Pupiņas 400 g",
+      "quantity": 1,
+      "prices_cents": [
+        449,
+        null,
+        400,
+        317,
+        470,
+        453,
+        433,
+        null
+      ]
+    },
+    {
+      "name": "P069: Milti 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        580,
+        null,
+        null,
+        618,
+        null,
+        null,
+        null,
+        591
+      ]
+    },
+    {
+      "name": "P070: Cukurs 1 kg",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        null,
+        null,
+        null,
+        363,
+        295,
+        346,
+        319
+      ]
+    },
+    {
+      "name": "P071: Šokolāde 100 g",
+      "quantity": 3,
+      "prices_cents": [
+        204,
+        280,
+        261,
+        270,
+        273,
+        null,
+        226,
+        209
+      ]
+    },
+    {
+      "name": "P072: Rieksti 200 g",
+      "quantity": 2,
+      "prices_cents": [
+        null,
+        null,
+        129,
+        null,
+        130,
+        null,
+        null,
+        128
+      ]
+    },
+    {
+      "name": "P073: Sula 1 l",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        null,
+        237,
+        226,
+        216,
+        230,
+        null,
+        280
+      ]
+    },
+    {
+      "name": "P074: Cepumi 250 g",
+      "quantity": 1,
+      "prices_cents": [
+        293,
+        null,
+        301,
+        260,
+        null,
+        291,
+        252,
+        null
+      ]
+    },
+    {
+      "name": "P075: Medus 500 g",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        758,
+        512,
+        null,
+        null,
+        null,
+        716,
+        null
+      ]
+    },
+    {
+      "name": "P076: Zobu pasta 75 ml",
+      "quantity": 1,
+      "prices_cents": [
+        1034,
+        null,
+        null,
+        808,
+        1162,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P077: Ziepes 100 g",
+      "quantity": 1,
+      "prices_cents": [
+        255,
+        255,
+        226,
+        279,
+        202,
+        null,
+        233,
+        211
+      ]
+    },
+    {
+      "name": "P078: Šampūns 250 ml",
+      "quantity": 3,
+      "prices_cents": [
+        745,
+        883,
+        714,
+        null,
+        737,
+        591,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P079: Trauku mazgāšanas līdzeklis 500 ml",
+      "quantity": 1,
+      "prices_cents": [
+        350,
+        null,
+        319,
+        316,
+        416,
+        null,
+        278,
+        null
+      ]
+    },
+    {
+      "name": "P080: Papīra dvieļi 2 ruļļi",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        1198,
+        1178,
+        null,
+        1219,
+        1126,
+        null,
+        null
+      ]
+    }
+  ]
+}

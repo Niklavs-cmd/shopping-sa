@@ -1,0 +1,118 @@
+{
+  "name": "small_08x04",
+  "metadata": {
+    "source": "Synthetic teaching data; no real store prices or scraping.",
+    "currency": "EUR",
+    "price_unit": "integer cents per unit",
+    "seed": 8104,
+    "scenario": "no_free",
+    "availability_probability": 0.78,
+    "feasible_assignments": 2592,
+    "identity_rule": "Each P-code is one identical product across all stores.",
+    "quantity_rule": "All units of an item are assigned to the same store."
+  },
+  "stores": [
+    {
+      "name": "Veikals A",
+      "delivery_cents": 499,
+      "free_delivery_threshold_cents": null
+    },
+    {
+      "name": "Veikals B",
+      "delivery_cents": 499,
+      "free_delivery_threshold_cents": null
+    },
+    {
+      "name": "Veikals C",
+      "delivery_cents": 749,
+      "free_delivery_threshold_cents": null
+    },
+    {
+      "name": "Veikals D",
+      "delivery_cents": 1199,
+      "free_delivery_threshold_cents": null
+    }
+  ],
+  "items": [
+    {
+      "name": "P001: Kafija 500 g",
+      "quantity": 2,
+      "prices_cents": [
+        204,
+        187,
+        252,
+        252
+      ]
+    },
+    {
+      "name": "P002: Tēja 40 maisiņi",
+      "quantity": 1,
+      "prices_cents": [
+        939,
+        null,
+        1025,
+        956
+      ]
+    },
+    {
+      "name": "P003: Rīsi 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        911,
+        776,
+        721,
+        919
+      ]
+    },
+    {
+      "name": "P004: Makaroni 500 g",
+      "quantity": 1,
+      "prices_cents": [
+        989,
+        1290,
+        null,
+        1097
+      ]
+    },
+    {
+      "name": "P005: Auzu pārslas 1 kg",
+      "quantity": 1,
+      "prices_cents": [
+        406,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "P006: Olīveļļa 500 ml",
+      "quantity": 1,
+      "prices_cents": [
+        569,
+        null,
+        575,
+        633
+      ]
+    },
+    {
+      "name": "P007: Konservēti tomāti 400 g",
+      "quantity": 1,
+      "prices_cents": [
+        null,
+        1111,
+        828,
+        null
+      ]
+    },
+    {
+      "name": "P008: Pupiņas 400 g",
+      "quantity": 2,
+      "prices_cents": [
+        341,
+        null,
+        302,
+        302
+      ]
+    }
+  ]
+}

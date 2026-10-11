@@ -1,0 +1,53 @@
+{
+  "name": "shipping_barrier",
+  "metadata": {
+    "source": "Synthetic exact counterexample.",
+    "known_optimum_cents": 2200,
+    "known_optimal_assignments": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "cheapest_items_assignment": [
+      0,
+      1
+    ],
+    "cheapest_items_total_cents": 3200,
+    "explanation": "Each cheapest item costs 1000; consolidation meets the 2200 free-delivery threshold."
+  },
+  "stores": [
+    {
+      "name": "Veikals A",
+      "delivery_cents": 600,
+      "free_delivery_threshold_cents": 2200
+    },
+    {
+      "name": "Veikals B",
+      "delivery_cents": 600,
+      "free_delivery_threshold_cents": 2200
+    }
+  ],
+  "items": [
+    {
+      "name": "P001",
+      "quantity": 1,
+      "prices_cents": [
+        1000,
+        1200
+      ]
+    },
+    {
+      "name": "P002",
+      "quantity": 1,
+      "prices_cents": [
+        1200,
+        1000
+      ]
+    }
+  ]
+}
